@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#wrapper {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  font-family: 'Open Sans';
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+#container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tile-text {
+  font-family: 'Open Sans';
+  fill: white;
+  font-size: 9px;
+  pointer-events: none;
+}
+
+#tooltip {
+  padding: 0.5rem;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: rgba(0, 0, 0, 0.699);
+  color: white;
+  opacity: 0;
+  pointer-events: none;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+#tooltip.visible {
+  opacity: 1;
+}
+
+path,
+line {
+  opacity: 0;
+}
