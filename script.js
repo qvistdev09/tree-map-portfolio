@@ -37,7 +37,12 @@ const treemapWrapper = svg
 d3.json(
   'https://cdn.freecodecamp.org/testable-projects-fcc/data/tree_map/video-game-sales-data.json'
 ).then((data) => {
-  let root = d3.hierarchy(data).sum((d) => d.value);
+  let root = d3
+    .hierarchy(data)
+    .sum((d) => d.value)
+    .sort(function (a, b) {
+      return -a.value - -b.value;
+    });
 
   d3
     .treemap()
