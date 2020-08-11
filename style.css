@@ -10,7 +10,6 @@
   justify-content: center;
   align-items: center;
   width: 100vw;
-  min-height: 100vh;
   font-family: 'Open Sans';
 }
 
@@ -61,4 +60,8 @@ h2 {
 path,
 line {
   opacity: 0;
+}
+
+#desc {
+  font-size: 0.9rem;
 }
